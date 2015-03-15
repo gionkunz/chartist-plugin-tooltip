@@ -25,10 +25,10 @@ var chart = new Chartist.Line('.ct-chart', {
       {meta: 'description', value: 3}
     ],
     [
-    {meta: 'other description', value: 2}, 
-    {meta: 'other description', value: 4}, 
-    {meta: 'other description', value: 2}
-  ]
+      {meta: 'other description', value: 2}, 
+      {meta: 'other description', value: 4}, 
+      {meta: 'other description', value: 2}
+    ]
 }, {
   plugins: [
     Chartist.plugins.tooltip()
