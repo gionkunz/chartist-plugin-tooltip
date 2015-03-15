@@ -14,7 +14,30 @@ Please visit http://gionkunz.github.io/chartist-js/plugins.html for more informa
 
 `bower install chartist-plugin-tooltip --save`
 
-```javascript
+With descriptive text:
+```js
+var chart = new Chartist.Line('.ct-chart', {
+  labels: [1, 2, 3],
+  series: [
+    [
+      {meta: 'description', value: 1 }, 
+      {meta: 'description', value: 5}, 
+      {meta: 'description', value: 3}
+    ],
+    [
+    {meta: 'other description', value: 2}, 
+    {meta: 'other description', value: 4}, 
+    {meta: 'other description', value: 2}
+  ]
+}, {
+  plugins: [
+    Chartist.plugins.tooltip()
+  ]
+});
+```
+
+without:
+```js
 var chart = new Chartist.Line('.ct-chart', {
   labels: [1, 2, 3, 4, 5, 6, 7],
   series: [
