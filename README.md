@@ -12,6 +12,8 @@ Please visit http://gionkunz.github.io/chartist-js/plugins.html for more informa
 
 ## Sample usage in Chartist.js
 
+`bower install chartist-plugin-tooltip --save`
+
 ```javascript
 var chart = new Chartist.Line('.ct-chart', {
   labels: [1, 2, 3, 4, 5, 6, 7],
@@ -21,7 +23,7 @@ var chart = new Chartist.Line('.ct-chart', {
   ]
 }, {
   plugins: [
-    tooltips()
+    Chartist.plugins.tooltip()
   ]
 });
 ```
