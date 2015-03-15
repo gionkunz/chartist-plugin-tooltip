@@ -18,11 +18,11 @@
   };
 
   Chartist.plugins = Chartist.plugins || {};
-  Chartist.plugins.tooltips = function(options) {
+  Chartist.plugins.tooltip = function(options) {
 
     // options = Chartist.extend({}, defaultOptions, options);
 
-    return function tooltips(chart) {
+    return function tooltip(chart) {
       var tooltipSelector = '.ct-point';
       if(chart instanceof Chartist.Bar) {
         tooltipSelector = '.ct-bar';

@@ -10,6 +10,6 @@ describe('ctPointLabels', function () {
   });
 
   it('should be defined in chartist', function () {
-    expect(window.Chartist.plugins.tooltips).toBeDefined();
+    expect(window.Chartist.plugins.tooltip).toBeDefined();
   });
 });
