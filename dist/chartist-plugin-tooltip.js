@@ -50,10 +50,16 @@
         .hide();
 
         $chart.on('mouseenter', tooltipSelector, function() {
-          var $point = Ember.$(this),
-          value = $point.attr('ct:value'),
-          seriesName = $point.attr('ct:meta');
-          $toolTip.html(seriesName + '<br>' + value).show();
+          var $point = Ember.$(this);
+          var tooltipText = '';
+
+          if ($point.attr('ct:meta')) {
+            tooltipText += $point.attr('ct:meta') + '<br>';
+          }
+
+          tooltipText += $point.attr('ct:value')
+
+          $toolTip.html(tooltipText).show();
         });
 
         $chart.on('mouseleave', tooltipSelector, function() {
